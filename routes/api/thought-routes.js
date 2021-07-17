@@ -10,16 +10,18 @@ const {
 } = require('../../controllers/thought-controller');
 
 // /api/thoughts
-router.route('/')
-  .get(getAllThoughts)
+router
+  .route('/')
+  .get(getAllThoughts);
 
 // /api/thoughts/:id
 router
   .route('/:id')
-  .get(getThoughtById)
+  .get(getThoughtById);
 
 // /api/thoughts/<userId>
-router.route('/:userId')
+router
+  .route('/:userId')
   .post(addThought);
 
 // /api/thoughts/<userId>/<thoughtId>
