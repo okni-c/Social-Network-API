@@ -17,7 +17,8 @@ router
 // /api/thoughts/:id
 router
   .route('/:id')
-  .get(getThoughtById);
+  .get(getThoughtById)
+  .put(updateThought);
 
 // /api/thoughts/<userId>
 router
