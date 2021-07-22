@@ -18,15 +18,17 @@ router
 // /api/thoughts/:id
 router
   .route('/:id')
-  .get(getThoughtById)
+  .get(getThoughtById);
+
+router
+  .route('/:thoughtId/:userId')
   .put(updateThought)
   .delete(removeThought);
 
 // /api/thoughts/thoughtId/reactions
 router
   .route('/:thoughtId/reactions')
-  .put(addReaction)
-  .delete(removeThought);
+  .put(addReaction);
 
 // /api/Thoughts/:thoughtId/:reactionId
 router.route('/:thoughtId/:reactionId').delete(removeReaction);
