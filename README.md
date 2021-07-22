@@ -30,6 +30,7 @@ npm start
     
 ## Preview 
 
+[Click the view the tutorial video!](https://drive.google.com/file/d/14MIY3m5WyEPOZlqe_xNm6ac_QckB56Mb/view)
     
 ![Application Example Photo](/public/example.png)
 
